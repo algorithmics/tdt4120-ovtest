@@ -21,6 +21,7 @@ using Test
     @test binaryintervalsearch([1 2; 2 3; 3 0; 4 0; 5 1], 1.5, 1) == (2, 4)
     @test binaryintervalsearch([1 0; 2 0; 2 0; 3 0; 4 0; 5 0; 5 0], 1, 1) == (2, 5)
     @test binaryintervalsearch([1 2; 2 0; 3 3; 4 4], 0.25, 1) == (-1, -1) # Tom mengde
+    @test binaryintervalsearch([2 1; 3 2; 0 3; 0 4; 1 5], 1.5, 2) == (2, 4)
 
 end
 
