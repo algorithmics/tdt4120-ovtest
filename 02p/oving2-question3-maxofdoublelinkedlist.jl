@@ -35,7 +35,7 @@ n3.prev = n2
 n2.prev = n1 
 
 using Test
-println("Kjører testene!")
+printstyled("\n\n---------------\nKjører tester!!\n---------------\n"; color = :magenta)
 @testset "Basic tests" begin
     @test maxofdoublelinkedlist(n1) == 100
     @test maxofdoublelinkedlist(n2) == 100
@@ -44,4 +44,4 @@ end
 
 println("\nFungerte alt? Prøv å kjør koden i inginious!")
 println("Husk at disse testene ikke alltid sjekker alle edge-cases")
-println("---------------------------------------------------------")
+println("---------------------------------------------------------\n\n\n\n")

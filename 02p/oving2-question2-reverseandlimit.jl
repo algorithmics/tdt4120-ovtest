@@ -19,7 +19,7 @@ function deep(a) return deepcopy(a) end
 array = [6,5,4,3,2,1]
 
 using Test
-println("Kjører testene!")
+printstyled("---------------\nKjører tester!!\n---------------\n"; color = :magenta)
 @testset "Basic tests" begin
     @test reverseandlimit(deep(array), 3) == [1,2,3,3,3,3]
     @test reverseandlimit(deep(array), 4) == [1,2,3,4,4,4]
@@ -29,4 +29,4 @@ end
 
 println("\nFungerte alt? Prøv å kjør koden i inginious!")
 println("Husk at disse testene ikke alltid sjekker alle edge-cases")
-println("---------------------------------------------------------")
+println("---------------------------------------------------------\n\n\n\n")

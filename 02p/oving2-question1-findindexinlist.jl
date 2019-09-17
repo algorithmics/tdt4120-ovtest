@@ -29,7 +29,7 @@ n2 = Node(n3, 10)
 n1 = Node(n2, 1)
 
 using Test
-println("Kjører testene!")
+printstyled("\n\n---------------\nKjører tester!!\n---------------\n"; color = :magenta)
 @testset "Basic tests" begin
     @test findindexinlist(n1, 1) == 1
     @test findindexinlist(n1, 2) == 10
@@ -40,4 +40,4 @@ end
 
 println("\nFungerte alt? Prøv å kjør koden i inginious!")
 println("Husk at disse testene ikke alltid sjekker alle edge-cases")
-println("---------------------------------------------------------")
+println("---------------------------------------------------------\n\n\n\n")
