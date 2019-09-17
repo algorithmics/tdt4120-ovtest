@@ -12,6 +12,7 @@ catch e end
 
 
 
+
 ## Du skal implementere denne funksjonen 
 function maxofdoublelinkedlist(linkedlist)
     # TODO

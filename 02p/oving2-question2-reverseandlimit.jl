@@ -19,7 +19,7 @@ function deep(a) return deepcopy(a) end
 array = [6,5,4,3,2,1]
 
 using Test
-printstyled("---------------\nKjører tester!!\n---------------\n"; color = :magenta)
+printstyled("\n\n---------------\nKjører tester!!\n---------------\n"; color = :magenta)
 @testset "Basic tests" begin
     @test reverseandlimit(deep(array), 3) == [1,2,3,3,3,3]
     @test reverseandlimit(deep(array), 4) == [1,2,3,4,4,4]

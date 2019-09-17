@@ -11,6 +11,7 @@ catch e end
 
 
 
+
 ## Du skal implementere denne funksjonen 
 function findindexinlist(linkedlist, index)
     # TODO 
