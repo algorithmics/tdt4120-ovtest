@@ -24,7 +24,7 @@ end
 # Disse testene blir kjør når du kjører filen
 # Du trenger ikke å endre noe her, men du kan eksperimentere! 
 
-printstyled("\n\n---------------\nKjører tester!!\n---------------\n"; color = :magenta)
+printstyled("\n\n\n---------------\nKjører tester!!\n---------------\n"; color = :magenta)
 
 using Test
 @testset "Basic tests" begin
@@ -37,4 +37,4 @@ end
 
 println("\nFungerte alt? Prøv å kjør koden i inginious!")
 println("Husk at disse testene ikke alltid sjekker alle edge-cases")
-println("---------------------------------------------------------\n\n\n\n")
+println("---------------------------------------------------------\n\n")
