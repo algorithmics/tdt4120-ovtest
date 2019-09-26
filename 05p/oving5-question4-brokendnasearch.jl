@@ -46,8 +46,8 @@ using Test
 @testset "Tester" begin
 	@test brokendnasearch(root1, s1) == 1
 	@test brokendnasearch(root1, s2) == 0
-    @test brokendnasearch(root1, s3) == 1
-    @test brokendnasearch(root1, s4) == 0
+	@test brokendnasearch(root1, s3) == 1
+	@test brokendnasearch(root1, s4) == 0
 	@test brokendnasearch(root2, s1) == 5
 	@test brokendnasearch(root2, s3) == 5
 	@test brokendnasearch(root2, s4) == 5
