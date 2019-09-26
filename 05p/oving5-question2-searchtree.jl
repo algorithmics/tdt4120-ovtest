@@ -41,8 +41,8 @@ using Test
 @testset "Tester" begin
 	@test searchtree(root1, s1) == 0
 	@test searchtree(root1, s2) == 2
-    @test searchtree(root1, s3) == 0
-    @test searchtree(root2, s1) == 0
+	@test searchtree(root1, s3) == 0
+	@test searchtree(root2, s1) == 0
 	@test searchtree(root2, s2) == 1
 	@test searchtree(root2, s3) == 1
 end
