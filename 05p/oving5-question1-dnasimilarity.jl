@@ -16,10 +16,10 @@ using Test
 @testset "Tester" begin
 	@test dnasimilarity("A", "A") == 1
 	@test dnasimilarity("A", "T") == 0
-    @test dnasimilarity("ATCG", "ATGC") == 2
-    @test dnasimilarity("ATATATA", "TATATAT") == 0
-    @test dnasimilarity("ATGCATGC", "ATGCATGC") == 8
-    @test dnasimilarity("CAATAAGGATCTGGTAGCTT", "CCTTACTGAAGCCGCTATGC") == 6
+	@test dnasimilarity("ATCG", "ATGC") == 2
+	@test dnasimilarity("ATATATA", "TATATAT") == 0
+	@test dnasimilarity("ATGCATGC", "ATGCATGC") == 8
+	@test dnasimilarity("CAATAAGGATCTGGTAGCTT", "CCTTACTGAAGCCGCTATGC") == 6
 end
 
 println("\nFungerte alt? Prøv å kjør koden i inginious!")
