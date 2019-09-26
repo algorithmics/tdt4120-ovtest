@@ -19,11 +19,11 @@ import Base: ==
 
 ### Du skal implementere denne funksjonen ###
 function buildtree(dnasequences)
-	root = Node()
+    root = Node()
     # Alle sekvenser har den tomme strengen som prefix:
     root.count = length(dnasequences)
 
-	# Din kode
+    # Din kode
 
     return root
 end
@@ -55,7 +55,7 @@ using Test
 @testset "Tester" begin
 	@test buildtree(dnasequences1) == tree1
 	@test buildtree(dnasequences2) == tree2
-    @test buildtree(dnasequences3) == tree3
+    	@test buildtree(dnasequences3) == tree3
 	@test buildtree(dnasequences4) == tree4
 end
 
