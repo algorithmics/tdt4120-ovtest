@@ -1,4 +1,4 @@
-function min_coins_dynamic(coins, value)
+function usegreed(coins)
     # din kode her
 end
 
@@ -10,9 +10,12 @@ printstyled("\n\n\n---------------\nKjører tester\n---------------\n"; color = 
 
 using Test
 @testset "Tester" begin
-	@test min_coins_dynamic([4,3,1],18) == 5
-  @test min_coins_dynamic([1000,500,100,30,7,1],14) == 2
-  @test min_coins_dynamic([40, 30, 20, 10, 1], 90) == 3
+	@test usegreed([20, 10, 5, 1]) == true
+  @test usegreed([20, 15, 10, 5, 1]) == false
+  @test usegreed([100, 1]) == true
+  @test usegreed([5, 4, 3, 2, 1]) == false
+  @test usegreed([1]) == true
+
 end
 
 println("\nFungerte alt? Prøv å kjør koden i inginious!")

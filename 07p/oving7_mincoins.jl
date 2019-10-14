@@ -1,4 +1,4 @@
-function can_use_greedy(coins)
+function mincoins(coins, value)
     # din kode her
 end
 
@@ -10,12 +10,9 @@ printstyled("\n\n\n---------------\nKjører tester\n---------------\n"; color = 
 
 using Test
 @testset "Tester" begin
-	@test can_use_greedy([20, 10, 5, 1]) == true
-  @test can_use_greedy([20, 15, 10, 5, 1]) == false
-  @test can_use_greedy([100, 1]) == true
-  @test can_use_greedy([5, 4, 3, 2, 1]) == false
-  @test can_use_greedy([1]) == true
-
+	@test mincoins([4,3,1],18) == 5
+  @test mincoins([1000,500,100,30,7,1],14) == 2
+  @test mincoins([40, 30, 20, 10, 1], 90) == 3
 end
 
 println("\nFungerte alt? Prøv å kjør koden i inginious!")
