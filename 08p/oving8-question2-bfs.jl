@@ -82,7 +82,7 @@ using Test
     @test nodeattrs(nodelist[4]) == "black 1 (2, 2)"
     @test nodeattrs(nodelist[5]) == "gray 3 (4, 2)"
     @test nodeattrs(nodelist[6]) == "black 2 (2, 3)"
-    @test nodeattrs(nodelist[7]) == "white 4 (4, 3)"
+    @test nodeattrs(nodelist[7]) in ["white 4 (4, 3)", "gray 4 (4, 3)"]
 end
 
 @testset "MiddelsLabyrint" begin
@@ -138,7 +138,7 @@ end
     @test nodeattrs(nodelist[14]) == "black 5 (2, 6)"
     @test nodeattrs(nodelist[15]) == "black 6 (3, 6)"
     @test nodeattrs(nodelist[16]) == "gray 7 (4, 6)"
-    @test nodeattrs(nodelist[17]) == "white 8 (5, 6)"
+    @test nodeattrs(nodelist[17]) in ["white 8 (5, 6)", "gray 8 (5, 6)"]
 end
 
 
