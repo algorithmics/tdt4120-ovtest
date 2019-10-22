@@ -76,11 +76,12 @@ using Test
 
     # Test at attributtene til nodene i nodelist ble oppdatert korrekt
     # Attributtene tilsvarer color, distance og koordinatene til predecessor
+    # (Merk at fargene kan variere noe ut ifra når man returnerer målnoden)
     @test nodeattrs(nodelist[1]) == "black 0 nothing"
     @test nodeattrs(nodelist[2]) == "black 1 (2, 2)"
     @test nodeattrs(nodelist[3]) == "black 2 (3, 2)"
     @test nodeattrs(nodelist[4]) == "black 1 (2, 2)"
-    @test nodeattrs(nodelist[5]) == "gray 3 (4, 2)"
+    @test nodeattrs(nodelist[5]) in ["gray 3 (4, 2)", "black 3 (4, 2)"]
     @test nodeattrs(nodelist[6]) == "black 2 (2, 3)"
     @test nodeattrs(nodelist[7]) in ["white 4 (4, 3)", "gray 4 (4, 3)"]
 end
@@ -130,14 +131,14 @@ end
     @test nodeattrs(nodelist[6]) == "black 1 (2, 2)"
     @test nodeattrs(nodelist[7]) == "black 5 (6, 2)"
     @test nodeattrs(nodelist[8]) == "black 2 (2, 3)"
-    @test nodeattrs(nodelist[9]) == "gray 8 (5, 4)"
+    @test nodeattrs(nodelist[9]) in ["gray 8 (5, 4)", "black 8 (5, 4)"]
     @test nodeattrs(nodelist[10]) == "black 7 (6, 4)"
     @test nodeattrs(nodelist[11]) == "black 6 (6, 3)"
     @test nodeattrs(nodelist[12]) == "black 3 (2, 4)"
     @test nodeattrs(nodelist[13]) == "black 4 (2, 5)"
     @test nodeattrs(nodelist[14]) == "black 5 (2, 6)"
     @test nodeattrs(nodelist[15]) == "black 6 (3, 6)"
-    @test nodeattrs(nodelist[16]) == "gray 7 (4, 6)"
+    @test nodeattrs(nodelist[16]) in ["gray 7 (4, 6)", "black 7 (4, 6)"]
     @test nodeattrs(nodelist[17]) in ["white 8 (5, 6)", "gray 8 (5, 6)"]
 end
 
