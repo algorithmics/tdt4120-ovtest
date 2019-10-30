@@ -65,9 +65,9 @@ using Test
             0 0 0 0 0]
     nodelist = mazetonodelist(maze)
 
-    # Test at nodelist er en liste/array med Node-instanser
+    # Test at nodelist er en 1-dimensjonal liste/array
     # Merk at følgende tester vil feile dersom dette ikke er tilfelet
-    @test nodelist isa Array{Node,1}
+    @test length(size(nodelist)) == 1
 
     # Test at grafen inneholder riktig antall noder
     @test length(nodelist) == 7
@@ -97,7 +97,7 @@ end
             0 0 0 0 0 0 0]
     nodelist = mazetonodelist(maze)
 
-    @test nodelist isa Array{Node,1}
+    @test length(size(nodelist)) == 1
 
     @test length(nodelist) == 17
 
